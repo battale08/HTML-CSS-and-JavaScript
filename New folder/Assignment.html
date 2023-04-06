@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HTML Display Block</title>
+<style>
+body {
+margin: 0;
+}
+.header {
+padding: 10px;
+text-align: center;
+background-color:cadetblue;
+color: white;
+}
+.navbar {
+overflow: hidden;
+background-color:darkkhaki;
+}
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 10px 10px;
+}
+.navbar a.right {
+float: right;
+}
+.navbar a:hover{
+background-color: #eee;
+color: black;
+}
+.row {
+display: flex;
+flex-wrap: wrap;
+}
+.section {
+flex: 10%;
+background-color: #f1f1f1;
+padding: 20px;
+}
+.main {
+flex: 80%;
+background-color: white;
+padding: 20px;
+}
+.footer{
+padding:3px;
+background-color:darkcyan;
+width:100%;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<h1> HEADER of Webpage</h1>
+</div>
+<div class="navbar">
+<a href="#">Home</a>
+<a href="#">About US</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+<a href="#" class="right">SignUp</a>
+</div>
+<div class="row">
+<div class="section">
+<h2>Sidebar comes here</h2>
+</div>
+<div class="main">
+<h2></h2>
+<p></p>
+<br>
+<div class="row">
+<div class="section" style="margin-top:-50px;">
+<h2>(Example of section)</h2>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Footer</p>
+</div>
+</div>
+</body>
+</html>

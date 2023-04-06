@@ -1,0 +1,36 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: 200px 550px;
+    grid-gap: 10px;
+}
+
+.box {
+    background-color: lightgreen;
+}
+
+nav {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    
+}
+
+header {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+main {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#ads {
+    grid-column-start: 4;
+}
+
+footer {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
